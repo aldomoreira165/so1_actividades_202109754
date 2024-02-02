@@ -1,13 +1,5 @@
 #! /usr/bin/bash
 
-script_path="$(realpath "$0")"
-
-user=$(whoami)
-
-cron_job="* * * * * sleep 5 && $user $script_path"
-
-(crontab -l ; echo "$cron_job") | crontab -
-
 GITHUB_USER="aldomoreira165"
 
 url="https://api.github.com/users/$GITHUB_USER"
