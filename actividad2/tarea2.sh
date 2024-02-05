@@ -21,3 +21,7 @@ log_file="$HOME/tmp/$date/saludos.log"
 echo $message
 echo $message >> $log_file 
 
+# Cronjob para ejecutar este script cada 5 minutos
+#echo "*/5 * * * * $HOME/tarea2.sh" >> "$HOME/crontab.tmp"
+#rontab "$HOME/crontab.tmp"
+#rm "$HOME/crontab.tmp"
